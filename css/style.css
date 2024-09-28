@@ -9,6 +9,8 @@ body {
   
   nav {
     background-color: #333333;
+    display: inline-block;
+    width: 80%;
   }
   
   main {
@@ -23,14 +25,14 @@ body {
   footer {
     background-color: #333333;
     color: white;
-    padding: 16px;
+    padding: 11px;
     text-align: center;
   }
   
-  li {
+  /*li {
     display: inline-block;
     width: 150px;
-  }
+  }*/
   
   h1 {
     text-align: center;
@@ -59,4 +61,25 @@ body {
   nav ul li a:hover {
     background-color: gray;
   }
-  
+
+  nav img{
+    width: 10%;
+  }
+
+  .grid img{
+    width: 100%;
+  }
+
+  .grid{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 25px;
+  }
+
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
